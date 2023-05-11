@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+option go_package = "./;proto";
+
+
+message Topic {
+    string topic = 1;
+    string rule = 2;
+}
+
+message Message{
+    string topic =1;
+    string data = 2;
+}
+
+service SubscribeService {
+    rpc Subscribe(stream Topic) returns (stream Message){}
+}
+
