@@ -5,6 +5,6 @@
 ![输入图片说明](pub_sub.png)
 
 # 使用
-cd example
-go run server.go
+cd example <br>
+go run server.go <br>
 go run client.go
